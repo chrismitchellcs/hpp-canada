@@ -3,28 +3,40 @@ import React from "react";
 const packaging = [
   {
     name: "Bottles",
+    image: "bottles.jpg",
     description: (
-      <ul>
-        <li style={{ marginBottom: "10px" }}>
-          <strong>PET</strong> - Injection stretch blow molded for clear
-          containers. PET bottles offer higher oxygen barrier than HDPE at
-          common thicknesses.
+      <ul style={{}}>
+        <li style={{ marginBottom: "1em" }}>
+          PET is the most suitable material for bottles, whereas HDPE is
+          preferred for caps. Blow-molded bottles perform better with HPP.
         </li>
-        <li style={{ marginBottom: "10px" }}>
-          <strong>HDPE</strong> - Blowmolded for translucent to opaque
-          containers.
+        <li style={{ marginBottom: "1em" }}>
+          Rounded corners provide shoulder rigidity and less strain when
+          compared to pointy/edgy corners.
         </li>
-
-        <li style={{ marginBottom: "10px" }}>
-          <strong>PP</strong> - Commonly used as base material for closures,
-          which can also incorporate thermoplastic elastomers (TPE) in some
-          versions for tight seals.
+        <li style={{ marginBottom: "1em" }}>
+          Crown-shaped base provides rigidity and structural support for
+          carbonated drinks.
         </li>
-        <li style={{ marginBottom: "10px" }}>
-          Induction sealable liners principally comprise aluminum foil combined
-          with a heat seal peelable layer of LDPE or copolymer-type materials.
-          Head space can be flushed with N2 after filling to minimize oxygen in
-          head space.
+        <li style={{ marginBottom: "1em" }}>
+          Caps with inner plug/embossment are preferred as the inner lip
+          prevents fluid exchange during high pressure.
+        </li>
+        <li style={{ marginBottom: "1em" }}>
+          Liner seals in the cap are not desired as they may lead to leakage if
+          cap and liner materials compress at different rates.
+        </li>
+        <li style={{ marginBottom: "1em" }}>
+          Foil closures must be validated. The cap should be placed after HPP to
+          avoid mechanical stress from air trapped in void space.
+        </li>
+        <li style={{ marginBottom: "1em" }}>
+          Dispenser caps can be used if the bottle opening is covered with a
+          suitable foil closure and the cap is placed after HPP.
+        </li>
+        <li style={{ marginBottom: "0" }}>
+          Minimizing the headspace reduces undesired chemical/enzymatic
+          reactions and prevents bottle wall collapse (paneling).
         </li>
       </ul>
     ),
@@ -34,6 +46,7 @@ const packaging = [
   },
   {
     name: "Flexible Pouches & Bags",
+    image: "pouches.png",
     description: (
       <ul>
         <li style={{ marginBottom: "10px" }}>
@@ -59,6 +72,7 @@ const packaging = [
   },
   {
     name: "Trays",
+    image: "tray.jpg",
     description: (
       <ul>
         <li style={{ marginBottom: "10px" }}>
@@ -84,6 +98,7 @@ const packaging = [
   },
   {
     name: "Flexible Packaging",
+    image: "flexible.jpg",
     description: (
       <ul>
         <li style={{ marginBottom: "10px" }}>
@@ -100,6 +115,7 @@ const packaging = [
   },
   {
     name: "Tubs",
+    image: "tubs.jpg",
     description: (
       <ul>
         <li style={{ marginBottom: "10px" }}>
@@ -156,6 +172,7 @@ const packaging = [
   },
   {
     name: "Bulk Bags",
+    image: "bulk.jpg",
     description: (
       <ul>
         <li style={{ marginBottom: "10px" }}>

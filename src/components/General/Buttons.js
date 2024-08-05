@@ -36,7 +36,7 @@ const TitleButton = styled(Button)({
   maxHeight: "40px",
   margin: "10px",
   fontFamily: "inherit",
-  fontSize: "30px",
+  fontSize: "26px",
   fontWeight: "500",
   letterSpacing: "0px",
 

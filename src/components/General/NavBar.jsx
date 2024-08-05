@@ -65,7 +65,7 @@ export default function NavBar(props) {
             <NavButton href="benefits">Benefits of HPP</NavButton>
             <NavButton href="packaging">Packaging</NavButton>
             <NavButton href="validation">Validation Studies</NavButton>
-            <ContactButton href="contact">Contact Us</ContactButton>
+            <ContactButton href="contact">CONTACT US</ContactButton>
           </Toolbar>
         </AppBar>
       </HideOnScroll>

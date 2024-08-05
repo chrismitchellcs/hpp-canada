@@ -20,7 +20,7 @@ const LogoSlider = () => {
   };
   return (
     <Stack width={"100%"} alignItems={"center"} spacing={5} mt={5} mb={5}>
-      <Box sx={{ fontSize: "20px", fontWeight: "400" }}>
+      <Box sx={{ fontSize: "18px", fontWeight: "400" }}>
         TRUSTED BY PREMIUM FOOD MANUFACTURERS
       </Box>
       <Box width={"80%"}>

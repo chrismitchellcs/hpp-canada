@@ -90,31 +90,13 @@ const Item = ({ item }) => {
 
 const ItemButtons = ({ items }) => {
   return (
-    <Stack pt={5} pb={5} alignItems={"center"} spacing={1} bgcolor="#F5F5F5">
-      {/* <Stack direction={"row"} spacing={2} alignItems={"center"}> */}
-      {/* <Box sx={{ fontSize: "30px", fontWeight: "500", textAlign: "center" }}>
-          See what HPP can do for you
-        </Box> */}
-      {/* <ContactButton>More Info</ContactButton>
-      </Stack> */}
-      {/* <Box sx={{ fontSize: "30px", fontWeight: "500", textAlign: "center" }}>
-        Applications of High Pressure Processing in the Food Industry
-      </Box> */}
-      <TitleButton>
-        Applications of High Pressure Processing in the Food Industry
-      </TitleButton>
-      <Box sx={{ fontSize: "16px", fontWeight: "400", textAlign: "center" }}>
-        Explore the diverse ways HPP technology enhances food safety, extends
-        shelf life, and maintains nutritional quality across various products.
-      </Box>
-      <Grid container spacing={0} textAlign={"center"} rowSpacing={4}>
-        {items.map((item) => (
-          <Grid item xs={12} sm={6} md={6} lg={3} xl={3}>
-            <Item item={item}></Item>
-          </Grid>
-        ))}
-      </Grid>
-    </Stack>
+    <Grid container spacing={0} textAlign={"center"} rowSpacing={4}>
+      {items.map((item) => (
+        <Grid item xs={12} sm={6} md={6} lg={3} xl={3}>
+          <Item item={item}></Item>
+        </Grid>
+      ))}
+    </Grid>
   );
 };
 

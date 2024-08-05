@@ -14,10 +14,10 @@ const ImageInfo = () => {
       sx={{ bgcolor: "white" }}
     >
       <Stack width={"40%"} height={"100%"}>
-        <Box sx={{ fontSize: "30px", fontWeight: "500", ml: 3, mb: 5 }}>
+        <Box sx={{ fontSize: "26px", fontWeight: "500", ml: 3, mb: 5 }}>
           The Only Tolling HPP Machine in BC
         </Box>
-        <Box sx={{ fontSize: "20px", fontWeight: "400" }}>
+        <Box sx={{ fontSize: "18px", fontWeight: "400" }}>
           <ul style={{ marginLeft: "0px" }}>
             <li style={{ marginBottom: "10px" }}>
               <strong>Healthier Products:</strong> HPP maintains the nutritional
