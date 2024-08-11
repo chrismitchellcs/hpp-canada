@@ -29,11 +29,21 @@ const ImageButton = styled(Button)({
   },
 });
 
+const ImageButtonSmall = styled(Button)({
+  backgroundColor: "transparent",
+  maxWidth: "100px",
+
+  "&:hover": {
+    backgroundColor: "transparent",
+    color: "black",
+  },
+});
+
 const TitleButton = styled(Button)({
   textTransform: "none",
   backgroundColor: "transparent",
   color: "black",
-  maxHeight: "40px",
+
   margin: "10px",
   fontFamily: "inherit",
   fontSize: "26px",
@@ -54,7 +64,7 @@ const FooterButton = styled(Button)({
   color: "black",
   maxHeight: "40px",
   margin: "2px",
-  fontSize: "16px",
+  fontSize: "14px",
   fontWeight: "400",
 
   "&:hover": {
@@ -73,9 +83,8 @@ const ContactButton = styled(Button)({
   marginLeft: "10px",
   marginRight: "10px",
   padding: "10px",
-  fontSize: "16px",
+  fontSize: "14px",
   fontWeight: "400",
-  maxHeight: "40px",
 
   "&:hover": {
     //   textDecoration: "underline",
@@ -134,4 +143,5 @@ export {
   QuoteButton,
   TitleButton,
   ImageButton,
+  ImageButtonSmall,
 };

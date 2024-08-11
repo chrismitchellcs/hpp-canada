@@ -6,7 +6,14 @@ import React from "react";
 const IndividualAdvantages = () => {
   return (
     <Stack pt={5} pb={5} alignItems={"center"} spacing={1} bgcolor="#F5F5F5">
-      <Box sx={{ fontSize: "26px", fontWeight: "500" }}>
+      <Box
+        sx={{
+          fontSize: "26px",
+          fontWeight: "500",
+          width: "80%",
+          textAlign: "center",
+        }}
+      >
         Advantages of HPP for Common Items
       </Box>
       <ItemButtons items={items}></ItemButtons>

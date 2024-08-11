@@ -6,9 +6,9 @@ const InfoBox = ({ title }) => {
   return (
     <Stack
       spacing={2}
-      pb={4}
+      pb={3}
+      pt={{ xs: 5, sm: 5, md: 9 }}
       sx={{
-        pt: 9,
         width: "100%",
         alignItems: "center",
         bgcolor: "#F5F5F5",

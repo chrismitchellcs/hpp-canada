@@ -7,8 +7,8 @@ const InfoBox = () => {
     <Stack
       spacing={2}
       pb={5}
+      pt={{ xs: 5, sm: 5, md: 10 }}
       sx={{
-        pt: 10,
         width: "100%",
         alignItems: "center",
         bgcolor: "#F5F5F5",

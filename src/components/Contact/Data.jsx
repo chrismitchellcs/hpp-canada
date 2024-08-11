@@ -6,9 +6,10 @@ import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 
 const Data = () => {
   return (
-    <Stack alignItems={"center"}>
+    <Stack alignItems={"center"} width={"100%"}>
       <Stack
         spacing={3}
+        ml={2}
         sx={{
           bgcolor: "#F5F5F5",
 

@@ -1,4 +1,4 @@
-import { Stack, Box, Typography } from "@mui/material";
+import { Stack, Box, Typography, Link } from "@mui/material";
 import React from "react";
 
 const Info = () => {
@@ -15,7 +15,19 @@ const Info = () => {
           uniform pressure transmission allows for processing various food
           shapes and sizes, but packaging geometry affects throughput. <br></br>
           <br></br>Minimizing headspace reduces packaging failure risk, as gas
-          expands more violently than solids or liquids under pressure.
+          expands more violently than solids or liquids under pressure.{" "}
+          <br></br>
+          <br></br>More information can be found at{" "}
+          <Link
+            sx={{ color: "#38ad56", textDecorationColor: "#38ad56" }}
+            target="_blank"
+            href={
+              "https://www.hiperbaric.com/en/hpp-technology/hpp-applications/hpp-packaging/"
+            }
+          >
+            Hiperbarics Website
+          </Link>
+          .
         </Typography>
       </Box>
     </Stack>

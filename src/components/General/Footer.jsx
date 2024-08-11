@@ -14,7 +14,12 @@ const Footer = () => {
       justifyContent={"space-around"}
       p={3}
     >
-      <Box component={"img"} src={"hpplogo.png"} width={"300px"}></Box>
+      <Box
+        display={{ xs: "none", sm: "block" }}
+        component={"img"}
+        src={"hpplogo.png"}
+        width={"20%"}
+      ></Box>
       {/* <Grid container width={"30%"}>
         <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
           <NavButton>What is HPP</NavButton>
@@ -30,14 +35,14 @@ const Footer = () => {
         </Grid>
       </Grid> */}
       <Stack>
-        <FooterButton>What is HPP</FooterButton>
-        <FooterButton>Benefits of HPP</FooterButton>
-        <FooterButton>Packaging</FooterButton>
-        <FooterButton>Validation Studies</FooterButton>
+        <FooterButton href="what">What is HPP</FooterButton>
+        <FooterButton href="benefits">Benefits of HPP</FooterButton>
+        <FooterButton href="packaging">Packaging</FooterButton>
+        <FooterButton href="validation">Validation Studies</FooterButton>
       </Stack>
       <Stack
         spacing={2}
-        sx={{ fontSize: "16px", fontWeight: "400", color: "black" }}
+        sx={{ fontSize: "14px", fontWeight: "400", color: "black" }}
       >
         <Stack direction={"row"} alignItems={"center"} spacing={1}>
           <LocationOnOutlinedIcon

@@ -4,12 +4,17 @@ import React from "react";
 const Advantages = () => {
   return (
     <Stack
-      direction={"row"}
+      direction={{ xs: "column", sm: "column", md: "row" }}
       alignItems={"center"}
       justifyContent={"space-around"}
+      spacing={4}
       p={3}
     >
-      <Box component={"img"} src={"hpp circle.png"} width={"40%"}></Box>
+      <Box
+        component={"img"}
+        src={"hpp circle.png"}
+        width={{ xs: "100%", sm: "100%", md: "40%" }}
+      ></Box>
       <Stack spacing={1} sx={{ fontSize: "18px" }}>
         <Box>
           <strong>Food Safety Guaranteed:</strong> HPP destroys pathogens

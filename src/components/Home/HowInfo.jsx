@@ -5,18 +5,29 @@ import { ContactButton, TitleButton } from "../General/Buttons";
 
 const HowInfo = () => {
   return (
-    <Stack pt={5} alignItems={"center"} spacing={1} sx={{ bgcolor: "#F5F5F5" }}>
+    <Stack
+      pt={5}
+      pb={5}
+      alignItems={"center"}
+      spacing={1}
+      sx={{ bgcolor: "white" }}
+    >
       {/* <Box sx={{ fontSize: "30px", fontWeight: "500", textAlign: "center" }}>
         How High Pressure Processing Works
       </Box> */}
-      <TitleButton>How High Pressure Processing Works</TitleButton>
+      <TitleButton href="what">How High Pressure Processing Works</TitleButton>
       <Box
         sx={{ fontSize: "16px", fontWeight: "400", textAlign: "center", pb: 2 }}
+        width={"80%"}
       >
         Discover the science behind HPP technology and understand how it ensures
         food safety and quality without the need for preservatives.
       </Box>
-      <Box component={"img"} src="diagram.png" width={"60%"}></Box>
+      <Box
+        component={"img"}
+        src="diagram.png"
+        width={{ xs: "80%", sm: "80%", md: "70%", lg: "60%" }}
+      ></Box>
 
       {/* <Stack
         direction={"row"}

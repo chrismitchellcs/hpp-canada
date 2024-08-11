@@ -7,17 +7,22 @@ import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 const Info = () => {
   return (
     <Stack
-      direction={"row"}
-      pt={10}
+      direction={{ xs: "column", sm: "column", md: "row" }}
+      pt={{ xs: 5, sm: 5, md: 10 }}
       pb={5}
       alignItems={"center"}
       justifyContent={"center"}
       spacing={5}
       sx={{ bgcolor: "white" }}
     >
-      <Stack width={"40%"} height={"100%"} alignItems={"center"} spacing={3}>
+      <Stack
+        width={{ xs: "80%", sm: "80%", md: "40%" }}
+        height={"100%"}
+        alignItems={"center"}
+        spacing={3}
+      >
         <Box component={"img"} src="hpplogo.png" width={"60%"}></Box>
-        <Box sx={{ fontSize: "22px", fontWeight: "400", textAlign: "center" }}>
+        <Box sx={{ fontSize: "18px", fontWeight: "400", textAlign: "center" }}>
           Contact HPP Canada today to discuss any questions you may have,
           pricing for your product, and how we can transform your product and
           business.
@@ -35,8 +40,7 @@ const Info = () => {
             bgcolor: "#F5F5F5",
 
             p: 5,
-            pl: 10,
-            pr: 10,
+
             fontSize: "18px",
           }}
         >

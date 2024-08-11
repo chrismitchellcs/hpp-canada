@@ -63,7 +63,7 @@ const Item = ({ item }) => {
         id={item.name}
         onClick={handleClick}
         // @ts-ignore
-        color1={"white"}
+        color1={"#F5F5F5"}
         color2={"#cfcccc"}
       >
         <ItemButton name={item.name} arrow={showDescription}></ItemButton>
@@ -71,7 +71,7 @@ const Item = ({ item }) => {
       {showDescription && (
         <Box
           sx={{
-            bgcolor: "white",
+            bgcolor: "#F5F5F5",
             m: 2,
             pr: 3,
             pt: 1,
@@ -90,12 +90,15 @@ const Item = ({ item }) => {
 
 const PackagingButtons = ({ items }) => {
   return (
-    <Stack pt={5} pb={5} alignItems={"center"} spacing={1} bgcolor="#F5F5F5">
+    <Stack pt={5} pb={5} alignItems={"center"} spacing={1} bgcolor="white">
       {/* <Box sx={{ fontSize: "30px", fontWeight: "500", textAlign: "center" }}>
         Compatible Packaging
       </Box> */}
-      <TitleButton>Compatible Packaging</TitleButton>
-      <Box sx={{ fontSize: "16px", fontWeight: "400", textAlign: "center" }}>
+      <TitleButton href="packaging">Compatible Packaging</TitleButton>
+      <Box
+        sx={{ fontSize: "16px", fontWeight: "400", textAlign: "center" }}
+        width={"80%"}
+      >
         HPP works best with packaging that contains minimal air or headspace and
         can flex up to 15% to withstand high pressure, accommodating various
         packaging types.

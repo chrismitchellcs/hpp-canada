@@ -9,12 +9,14 @@ import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Slide from "@mui/material/Slide";
 import Image from "mui-image";
-import { Button, Stack, styled } from "@mui/material";
+import { Button, Menu, MenuItem, Stack, styled } from "@mui/material";
 import {
   NavButton,
   ContactButton,
   ImageButton,
+  ImageButtonSmall,
 } from "components/General/Buttons";
+import MenuIcon from "@mui/icons-material/Menu";
 
 function HideOnScroll(props) {
   const { children, window } = props;
@@ -41,30 +43,106 @@ HideOnScroll.propTypes = {
   window: PropTypes.func,
 };
 
+function BasicMenu() {
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const open = Boolean(anchorEl);
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = (e) => {
+    setAnchorEl(null);
+    const page = e.target.id;
+    window.location.href = page;
+  };
+
+  return (
+    <div>
+      <Button
+        id="basic-button"
+        aria-controls={open ? "basic-menu" : undefined}
+        aria-haspopup="true"
+        aria-expanded={open ? "true" : undefined}
+        onClick={handleClick}
+        sx={{ color: "black" }}
+      >
+        <MenuIcon></MenuIcon>
+      </Button>
+      <Menu
+        id="basic-menu"
+        anchorEl={anchorEl}
+        open={open}
+        onClose={handleClose}
+        MenuListProps={{
+          "aria-labelledby": "basic-button",
+        }}
+      >
+        <MenuItem onClick={handleClose} id="what">
+          What is HPP
+        </MenuItem>
+        <MenuItem onClick={handleClose} id="benefits">
+          Benefits of HPP
+        </MenuItem>
+        <MenuItem onClick={handleClose} id="packaging">
+          Packaging
+        </MenuItem>
+        <MenuItem onClick={handleClose} id="validation">
+          Validation Studies
+        </MenuItem>
+      </Menu>
+    </div>
+  );
+}
+
 export default function NavBar(props) {
   return (
     <React.Fragment>
       <CssBaseline />
       <HideOnScroll {...props}>
-        <AppBar>
+        <AppBar sx={{}}>
           <Toolbar
             sx={{
               bgcolor: "white",
+              m: 0,
+              p: 0,
             }}
           >
             <Stack flexGrow={1} m={1}>
-              <ImageButton href="/">
-                <Box
-                  component={"img"}
-                  src={"hpplogo.png"}
-                  width={"200px"}
-                ></Box>
-              </ImageButton>
+              <Box
+                display={{ xs: "none", sm: "none", md: "block", lg: "block" }}
+              >
+                <ImageButton href="/">
+                  <Box
+                    component={"img"}
+                    src={"hpplogo.png"}
+                    width={{ xs: "100px", sm: "100px", md: "200px" }}
+                  ></Box>
+                </ImageButton>
+              </Box>
+              <Box
+                display={{ xs: "block", sm: "block", md: "none", lg: "none" }}
+              >
+                <ImageButtonSmall href="/">
+                  <Box
+                    component={"img"}
+                    src={"hpplogo.png"}
+                    width={{ xs: "100px", sm: "100px", md: "200px" }}
+                  ></Box>
+                </ImageButtonSmall>
+              </Box>
             </Stack>
-            <NavButton href="what">What is HPP</NavButton>
-            <NavButton href="benefits">Benefits of HPP</NavButton>
-            <NavButton href="packaging">Packaging</NavButton>
-            <NavButton href="validation">Validation Studies</NavButton>
+            <Box display={{ xs: "none", sm: "none", md: "none", lg: "block" }}>
+              <NavButton href="what">What is HPP</NavButton>
+              <NavButton href="benefits">Benefits of HPP</NavButton>
+              <NavButton href="packaging">Packaging</NavButton>
+              <NavButton href="validation">Validation Studies</NavButton>
+            </Box>
+            <Box
+              display={{ xs: "block", sm: "block", md: "block", lg: "none" }}
+            >
+              <BasicMenu></BasicMenu>
+            </Box>
+
             <ContactButton href="contact">CONTACT US</ContactButton>
           </Toolbar>
         </AppBar>

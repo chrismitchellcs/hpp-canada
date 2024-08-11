@@ -20,7 +20,11 @@ const Machine = () => {
         products each hour.
       </Box>
 
-      <Box component={"img"} src="1.3-H300 copy.png" width={"60%"}></Box>
+      <Box
+        component={"img"}
+        src="1.3-H300 copy.png"
+        width={{ xs: "80%", sm: "80%", md: "60%" }}
+      ></Box>
     </Stack>
   );
 };

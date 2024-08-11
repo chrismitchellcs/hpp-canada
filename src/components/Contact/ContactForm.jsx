@@ -47,7 +47,7 @@ const ContactForm = () => {
       alignItems={"center"}
       bgcolor={"#F5F5F5"}
       pt={5}
-      pb={5}
+      pb={3}
     >
       <form onSubmit={handleSubmit} style={{ width: "80%" }}>
         {/* <label htmlFor="name">Name</label> */}

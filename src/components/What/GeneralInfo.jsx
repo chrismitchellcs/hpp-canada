@@ -26,7 +26,12 @@ const GeneralInfo = () => {
         the product, producing an effect similar to pasteurization but without
         using heat.
       </Box>
-      <Box component={"img"} src="diagram.png" width={"60%"} p={5}></Box>
+      <Box
+        component={"img"}
+        src="diagram.png"
+        width={{ xs: "100%", sm: "100%", md: "60%" }}
+        p={5}
+      ></Box>
     </Stack>
   );
 };

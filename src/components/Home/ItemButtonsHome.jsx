@@ -6,9 +6,14 @@ import React from "react";
 
 const ItemButtonsHome = () => {
   return (
-    <Stack pt={5} pb={5} alignItems={"center"} spacing={1} bgcolor="#F5F5F5">
-      <TitleButton>Applications of High Pressure Processing</TitleButton>
-      <Box sx={{ fontSize: "16px", fontWeight: "400", textAlign: "center" }}>
+    <Stack pt={5} pb={5} alignItems={"center"} spacing={1} bgcolor="white">
+      <TitleButton href="benefits">
+        Applications of High Pressure Processing
+      </TitleButton>
+      <Box
+        sx={{ fontSize: "16px", fontWeight: "400", textAlign: "center" }}
+        width={"80%"}
+      >
         Explore the diverse ways HPP technology enhances food safety, extends
         shelf life, and maintains nutritional quality across various products.
       </Box>
