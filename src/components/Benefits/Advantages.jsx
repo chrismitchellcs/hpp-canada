@@ -4,19 +4,14 @@ import React from "react";
 const Advantages = () => {
   return (
     <Stack
-      direction={{ xs: "column", sm: "column", md: "row" }}
       alignItems={"center"}
       justifyContent={"space-around"}
       spacing={4}
       p={3}
     >
-      <Box
-        component={"img"}
-        src={"hpp circle.png"}
-        width={{ xs: "100%", sm: "100%", md: "40%" }}
-      ></Box>
-      <Stack spacing={1} sx={{ fontSize: "18px" }}>
-        <Box>
+      <Box sx={{ fontSize: "26px", fontWeight: "450" }}>More Benefits</Box>
+      <Stack spacing={2} sx={{ fontSize: "18px" }} width={"90%"}>
+        <Box sx={{ lineHeight: "1.5" }}>
           <strong>Food Safety Guaranteed:</strong> HPP destroys pathogens
           (Salmonella, E. Coli, Listeria, Vibrio, norovirus, etc.) and spoilage
           microorganisms (lactic acid bacteria, coliforms, etc.), meeting the

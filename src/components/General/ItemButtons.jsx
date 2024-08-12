@@ -7,12 +7,12 @@ import { ContactButton, HomeButton, TitleButton } from "../General/Buttons";
 
 // @ts-ignore
 const StyledButton = styled(Button)(({ color1, color2 }) => ({
-  backgroundColor: color1,
+  backgroundColor: "white",
   color: "black",
   borderRadius: "10px",
 
   "&:hover": {
-    backgroundColor: color2,
+    backgroundColor: "#F5F5F5",
     color: "#black",
   },
 }));
@@ -63,15 +63,15 @@ const Item = ({ item }) => {
         id={item.name}
         onClick={handleClick}
         // @ts-ignore
-        color1={item.color1}
-        color2={item.color2}
+        color1={"#E7F2DA"}
+        color2={"#CEE4B5"}
       >
         <ItemButton name={item.name} arrow={showDescription}></ItemButton>
       </StyledButton>
       {showDescription && (
         <Box
           sx={{
-            bgcolor: item.color1,
+            bgcolor: "white",
             m: 2,
             pr: 3,
             pt: 1,

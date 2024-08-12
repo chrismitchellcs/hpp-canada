@@ -6,7 +6,7 @@ import React from "react";
 
 const ItemButtonsHome = () => {
   return (
-    <Stack pt={5} pb={5} alignItems={"center"} spacing={1} bgcolor="white">
+    <Stack pt={5} pb={5} alignItems={"center"} spacing={1} bgcolor="#E7F2DA">
       <TitleButton href="benefits">
         Applications of High Pressure Processing
       </TitleButton>

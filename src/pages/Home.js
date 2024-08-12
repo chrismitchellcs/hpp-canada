@@ -13,6 +13,7 @@ import items from "data/items";
 import packaging from "data/packaging";
 import React from "react";
 import ItemButtonsHome from "components/Home/ItemButtonsHome";
+import Line from "components/General/Line";
 
 const Home = () => {
   return (
@@ -23,9 +24,11 @@ const Home = () => {
       <LogoSlider></LogoSlider>
 
       <ItemButtonsHome></ItemButtonsHome>
+
       <HowInfo></HowInfo>
 
       <PackagingButtons items={packaging}></PackagingButtons>
+
       <RecognizedBy></RecognizedBy>
       <Quote></Quote>
 

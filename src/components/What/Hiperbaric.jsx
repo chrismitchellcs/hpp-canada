@@ -10,7 +10,13 @@ const Hiperbaric = () => {
         src="Hiperbaric__Logo.jpg"
         width={{ xs: "50%", sm: "50%", md: "30%" }}
       ></Box>
-      <NavButton>More Information on Hiperbaric Website</NavButton>
+      <NavButton
+        href="https://www.hiperbaric.com/en/hpp-technology/what-is-hpp/"
+        // @ts-ignore
+        target="_blank"
+      >
+        More Information on Hiperbaric Website
+      </NavButton>
     </Stack>
   );
 };

@@ -41,7 +41,14 @@ const LogoSlider = () => {
       mt={5}
       mb={5}
     >
-      <Box sx={{ fontSize: "18px", fontWeight: "400" }}>
+      <Box
+        sx={{
+          fontSize: "18px",
+          fontWeight: "400",
+          width: "80%",
+          textAlign: "center",
+        }}
+      >
         TRUSTED BY PREMIUM FOOD MANUFACTURERS
       </Box>
       <Box width={"80%"} display={{ xs: "none", sm: "none", md: "block" }}>

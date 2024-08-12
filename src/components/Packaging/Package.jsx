@@ -45,17 +45,17 @@ const Package = ({ name, image, description }) => {
         <Box
           component={"img"}
           src={image}
-          height={{ xs: "150px", sm: "200px", md: "250px" }}
+          height={{ xs: "150px", sm: "175px", md: "175px" }}
           pb={2}
         ></Box>
 
         <Stack
           direction={"row"}
           justifyContent={"space-between"}
-          width={"80%"}
+          width={"90%"}
           alignItems={"center"}
         >
-          <Box sx={{ fontSize: "22px", fontWeight: "400", color: "black" }}>
+          <Box sx={{ fontSize: "18px", fontWeight: "400", color: "black" }}>
             {name}
           </Box>
           <PackageButton onClick={handleClick}>

@@ -7,13 +7,18 @@ import faqs from "data/faqs";
 import Footer from "components/General/Footer";
 import Hiperbaric from "components/What/Hiperbaric";
 import InfoBox from "components/General/InfoBox";
+import Line from "components/General/Line";
+import HPPImage from "components/What/HPPImage";
 
 const What = () => {
   return (
     <div>
       <NavBar></NavBar>
       <InfoBox title={"What is High Pressure Processing"}></InfoBox>
+      <HPPImage></HPPImage>
       <GeneralInfo></GeneralInfo>
+      <Line></Line>
+
       <Machine></Machine>
       <Hiperbaric></Hiperbaric>
       <FAQ faqs={faqs}></FAQ>

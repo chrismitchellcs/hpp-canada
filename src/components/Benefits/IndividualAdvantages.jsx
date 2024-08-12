@@ -5,7 +5,7 @@ import React from "react";
 
 const IndividualAdvantages = () => {
   return (
-    <Stack pt={5} pb={5} alignItems={"center"} spacing={1} bgcolor="#F5F5F5">
+    <Stack pt={5} pb={5} alignItems={"center"} spacing={1} bgcolor="#E7F2DA">
       <Box
         sx={{
           fontSize: "26px",

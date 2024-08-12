@@ -43,6 +43,7 @@ const TitleButton = styled(Button)({
   textTransform: "none",
   backgroundColor: "transparent",
   color: "black",
+  textAlign: "center",
 
   margin: "10px",
   fontFamily: "inherit",
@@ -85,6 +86,7 @@ const ContactButton = styled(Button)({
   padding: "10px",
   fontSize: "14px",
   fontWeight: "400",
+  borderRadius: "15px",
 
   "&:hover": {
     //   textDecoration: "underline",
@@ -121,10 +123,11 @@ const QuoteButton = styled(Button)({
   marginTop: "20px",
   marginLeft: "10px",
   marginRight: "10px",
-  padding: "10px",
+  padding: "15px",
   fontSize: "16px",
   fontWeight: "400",
   maxHeight: "40px",
+  borderRadius: "15px",
 
   "&:hover": {
     //   textDecoration: "underline",
