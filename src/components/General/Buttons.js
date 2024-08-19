@@ -138,6 +138,28 @@ const QuoteButton = styled(Button)({
   },
 });
 
+const PaperButton = styled(Button)({
+  textTransform: "none",
+  backgroundColor: "#38ad56",
+  color: "white",
+  marginTop: "30px",
+
+  padding: "15px",
+  fontSize: "16px",
+  fontWeight: "400",
+  maxHeight: "40px",
+  borderRadius: "15px",
+  width: "20%",
+
+  "&:hover": {
+    //   textDecoration: "underline",
+    //   textDecorationThickness: "2px",
+    //   textUnderlineOffset: "5px",
+    backgroundColor: "#26753a",
+    //   color: "black",
+  },
+});
+
 export {
   ContactButton,
   NavButton,
@@ -147,4 +169,5 @@ export {
   TitleButton,
   ImageButton,
   ImageButtonSmall,
+  PaperButton,
 };

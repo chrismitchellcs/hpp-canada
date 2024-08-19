@@ -1,6 +1,7 @@
 import Advantages from "components/Benefits/Advantages";
 import Diagram from "components/Benefits/Diagram";
 import IndividualAdvantages from "components/Benefits/IndividualAdvantages";
+import IndiviualBenefits from "components/Benefits/IndividualBenefits";
 import Info from "components/Benefits/Info";
 import MainBenefits from "components/Benefits/MainBenefits";
 import Footer from "components/General/Footer";
@@ -13,14 +14,16 @@ const Benefits = () => {
   return (
     <div>
       <NavBar></NavBar>
-      <InfoBox title={"Benefits of High Pressure Processing"}></InfoBox>
+      {/* <InfoBox title={"Benefits of High Pressure Processing"}></InfoBox> */}
       {/* <Diagram></Diagram> */}
 
       <Info></Info>
       <MainBenefits></MainBenefits>
       {/* <Line></Line> */}
+      {/* <Line></Line> */}
       {/* <Advantages></Advantages> */}
-      <IndividualAdvantages></IndividualAdvantages>
+      {/* <IndividualAdvantages></IndividualAdvantages> */}
+      <IndiviualBenefits></IndiviualBenefits>
       <Footer></Footer>
     </div>
   );

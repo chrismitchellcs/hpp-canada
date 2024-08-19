@@ -38,7 +38,7 @@ const Footer = () => {
         <FooterButton href="what">What is HPP</FooterButton>
         <FooterButton href="benefits">Benefits of HPP</FooterButton>
         <FooterButton href="packaging">Packaging</FooterButton>
-        <FooterButton href="validation">Validation Studies</FooterButton>
+        <FooterButton href="whitepapers">White Papers</FooterButton>
       </Stack>
       <Stack
         spacing={2}

@@ -135,7 +135,7 @@ export default function NavBar(props) {
               <NavButton href="what">What is HPP</NavButton>
               <NavButton href="benefits">Benefits of HPP</NavButton>
               <NavButton href="packaging">Packaging</NavButton>
-              <NavButton href="validation">Validation Studies</NavButton>
+              <NavButton href="whitepapers">White Papers</NavButton>
             </Box>
             <Box
               display={{ xs: "block", sm: "block", md: "block", lg: "none" }}

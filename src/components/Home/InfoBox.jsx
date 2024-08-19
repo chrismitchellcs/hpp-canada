@@ -16,11 +16,11 @@ const InfoBox = () => {
         color: "black",
       }}
     >
-      <Box sx={{ fontSize: "20px", fontWeight: "450" }}>HPP CANADA</Box>
+      <Box sx={{ fontSize: "18px", fontWeight: "450" }}>HPP CANADA</Box>
       <Box
         width={{ xs: "80%", sm: "80%", md: "60%" }}
         sx={{
-          fontSize: "36px",
+          fontSize: "32px",
           fontWeight: "500",
           textAlign: "center",
           letterSpacing: "0px",
@@ -28,7 +28,7 @@ const InfoBox = () => {
       >
         Boost Your Product's Shelf Life and Quality with
         <Typography
-          sx={{ fontSize: "40px", fontWeight: "500", color: "#38ad56" }}
+          sx={{ fontSize: "32px", fontWeight: "500", color: "#38ad56" }}
         >
           High Pressure Processing
         </Typography>

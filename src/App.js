@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import What from "./pages/What";
 import Benefits from "./pages/Benefits";
 import Packaging from "./pages/Packaging";
-import Validation from "./pages/Validation";
+import WhitePapers from "./pages/WhitePapers";
 import Contact from "./pages/Contact";
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
         <Route path="/what" element={<What />}></Route>
         <Route path="/benefits" element={<Benefits />}></Route>
         <Route path="/packaging" element={<Packaging />}></Route>
-        <Route path="/validation" element={<Validation />}></Route>
+        <Route path="/whitepapers" element={<WhitePapers />}></Route>
         <Route path="/contact" element={<Contact />}></Route>
       </Routes>
     </BrowserRouter>

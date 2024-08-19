@@ -1,6 +1,7 @@
 import Footer from "components/General/Footer";
 import InfoBox from "components/General/InfoBox";
 import NavBar from "components/General/NavBar";
+import AllPackages from "components/Packaging/AllPackages";
 // @ts-ignore
 import Info from "components/Packaging/Info";
 import Package from "components/Packaging/Package";
@@ -12,9 +13,10 @@ const Packaging = () => {
   return (
     <div>
       <NavBar></NavBar>
-      <InfoBox title={"Packaging"}></InfoBox>
+      {/* <InfoBox title={"Packaging"}></InfoBox> */}
       <Info></Info>
-      <Packages></Packages>
+      {/* <Packages></Packages> */}
+      <AllPackages></AllPackages>
       <Footer></Footer>
     </div>
   );

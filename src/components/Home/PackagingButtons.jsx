@@ -90,7 +90,7 @@ const Item = ({ item }) => {
 
 const PackagingButtons = ({ items }) => {
   return (
-    <Stack pt={5} pb={5} alignItems={"center"} spacing={1} bgcolor="#e3f9fa">
+    <Stack pt={5} pb={5} alignItems={"center"} spacing={1} bgcolor="#F5F5F5">
       {/* <Box sx={{ fontSize: "30px", fontWeight: "500", textAlign: "center" }}>
         Compatible Packaging
       </Box> */}

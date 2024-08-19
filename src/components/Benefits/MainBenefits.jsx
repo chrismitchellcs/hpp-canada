@@ -30,6 +30,7 @@ const MainBenefits = () => {
           component={"img"}
           src="minimalprocessing.png"
           height={"75px"}
+          p={"8px"}
         ></Box>
         <Box sx={{ fontSize: "22px", fontWeight: "450" }}>
           Minimal Processing

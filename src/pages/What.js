@@ -9,14 +9,17 @@ import Hiperbaric from "components/What/Hiperbaric";
 import InfoBox from "components/General/InfoBox";
 import Line from "components/General/Line";
 import HPPImage from "components/What/HPPImage";
+import Diagram from "components/What/Diagram";
 
 const What = () => {
   return (
     <div>
       <NavBar></NavBar>
       <InfoBox title={"What is High Pressure Processing"}></InfoBox>
-      <HPPImage></HPPImage>
+      <Line></Line>
+      {/* <HPPImage></HPPImage> */}
       <GeneralInfo></GeneralInfo>
+      <Diagram></Diagram>
       <Line></Line>
 
       <Machine></Machine>

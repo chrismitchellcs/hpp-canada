@@ -3,7 +3,7 @@ import React from "react";
 const packaging = [
   {
     name: "Bottles",
-    image: "bottles.jpg",
+    image: "packages/water.png",
     description: (
       <ul style={{}}>
         <li style={{ marginBottom: "1em" }}>
@@ -46,7 +46,7 @@ const packaging = [
   },
   {
     name: "Flexible Pouches & Bags",
-    image: "pouches.png",
+    image: "packages/package.png",
     description: (
       <ul>
         <li style={{ marginBottom: "10px" }}>
@@ -72,7 +72,7 @@ const packaging = [
   },
   {
     name: "Trays",
-    image: "tray.jpg",
+    image: "packages/plate.png",
     description: (
       <ul>
         <li style={{ marginBottom: "10px" }}>
@@ -98,7 +98,7 @@ const packaging = [
   },
   {
     name: "Flexible Packaging",
-    image: "flexible.jpg",
+    image: "packages/minced-meat.png",
     description: (
       <ul>
         <li style={{ marginBottom: "10px" }}>
@@ -115,14 +115,14 @@ const packaging = [
   },
   {
     name: "Tubs",
-    image: "tubs.jpg",
+    image: "packages/tub.png",
     description: (
       <ul>
         <li style={{ marginBottom: "10px" }}>
           Semi-rigid, sealed polymer container capable of use for paste,
           solid/sauce mixtures or liquid products.
         </li>
-        <li>
+        <li style={{ marginBottom: "10px" }}>
           Typically labeled or decorated on sidewalls as well as on snap fit
           lids that cover film seals.
         </li>
@@ -161,7 +161,7 @@ const packaging = [
           depending on the appearance of the product or marketing
           considerations.
         </li>
-        <li>Heat sealed lids.</li>
+        <li style={{ marginBottom: "10px" }}>Heat sealed lids.</li>
         <li style={{ marginBottom: "10px" }}>
           Can be gas flushed to limit oxygen in headspace and extend shelf life.
         </li>
@@ -172,7 +172,7 @@ const packaging = [
   },
   {
     name: "Bulk Bags",
-    image: "bulk.jpg",
+    image: "packages/plastic-bag.png",
     description: (
       <ul>
         <li style={{ marginBottom: "10px" }}>

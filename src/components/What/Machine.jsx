@@ -7,11 +7,13 @@ const Machine = () => {
       width={"100%"}
       alignItems={"center"}
       spacing={3}
-      mt={3}
+      mt={5}
       mb={3}
       sx={{ fontSize: "18px", fontWeight: "400" }}
     >
-      <Box sx={{ fontSize: "26px", fontWeight: "500" }}>Our Machine</Box>
+      <Box sx={{ fontSize: "26px", fontWeight: "500", width: "80%" }}>
+        Our Machine
+      </Box>
       <Box width={"80%"}>
         HPP Canada uses the H300 by Hiperbaric, a game-changer in the HPP
         industry. As one of the fastest HPP machines in the world, the H300
