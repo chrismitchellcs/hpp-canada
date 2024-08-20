@@ -12,7 +12,7 @@ const StyledButton = styled(Button)(({ color1, color2 }) => ({
   borderRadius: "10px",
 
   "&:hover": {
-    backgroundColor: "#F5F5F5",
+    backgroundColor: "lightgrey",
     color: "#black",
   },
 }));
