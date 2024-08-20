@@ -86,8 +86,8 @@ function BasicMenu() {
         <MenuItem onClick={handleClose} id="packaging">
           Packaging
         </MenuItem>
-        <MenuItem onClick={handleClose} id="validation">
-          Validation Studies
+        <MenuItem onClick={handleClose} id="whitepapers">
+          White Papers
         </MenuItem>
       </Menu>
     </div>

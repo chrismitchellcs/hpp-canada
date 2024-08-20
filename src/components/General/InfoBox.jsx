@@ -4,8 +4,15 @@ import React from "react";
 
 const InfoBox = ({ title }) => {
   return (
-    <Stack alignItems={"center"} pt={9} pb={4} spacing={2}>
-      <Box sx={{ fontSize: "30px", fontWeight: "500" }}>{title}</Box>
+    <Stack
+      alignItems={"center"}
+      pt={{ xs: 6, sm: 6, md: 9 }}
+      pb={4}
+      spacing={2}
+    >
+      <Box sx={{ fontSize: "30px", fontWeight: "500" }} textAlign={"center"}>
+        {title}
+      </Box>
     </Stack>
   );
 };

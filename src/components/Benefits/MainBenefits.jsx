@@ -3,10 +3,17 @@ import React from "react";
 
 const MainBenefits = () => {
   return (
-    <Stack direction={"row"} justifyContent={"space-around"} pt={5} pb={5}>
+    <Stack
+      direction={{ xs: "column", sm: "column", md: "row" }}
+      justifyContent={"center"}
+      alignItems={"center"}
+      spacing={2}
+      pt={{ xs: 0, sm: 0, md: 5 }}
+      pb={5}
+    >
       <Stack
         alignItems={"center"}
-        width={"30%"}
+        width={{ xs: "80%", sm: "80%", md: "30%" }}
         textAlign={"center"}
         spacing={2}
       >
@@ -22,7 +29,7 @@ const MainBenefits = () => {
       </Stack>
       <Stack
         alignItems={"center"}
-        width={"30%"}
+        width={{ xs: "80%", sm: "80%", md: "30%" }}
         textAlign={"center"}
         spacing={2}
       >
@@ -44,7 +51,7 @@ const MainBenefits = () => {
 
       <Stack
         alignItems={"center"}
-        width={"30%"}
+        width={{ xs: "80%", sm: "80%", md: "30%" }}
         textAlign={"center"}
         spacing={2}
       >

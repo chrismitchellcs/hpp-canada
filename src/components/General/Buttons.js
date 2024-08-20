@@ -149,7 +149,7 @@ const PaperButton = styled(Button)({
   fontWeight: "400",
   maxHeight: "40px",
   borderRadius: "15px",
-  width: "20%",
+  width: "200px",
 
   "&:hover": {
     //   textDecoration: "underline",

@@ -15,9 +15,18 @@ const Info = () => {
     //     to traditional methods.
     //   </Stack>
     // </Stack>
-    <Stack alignItems={"center"} pt={9} pb={4} spacing={2}>
+    <Stack
+      alignItems={"center"}
+      pt={{ xs: 4, sm: 4, md: 9 }}
+      pb={4}
+      spacing={2}
+    >
       <Box sx={{ fontSize: "30px", fontWeight: "500" }}>Benefits of HPP</Box>
-      <Box sx={{ fontSize: "18px" }} width={"60%"} textAlign={"center"}>
+      <Box
+        sx={{ fontSize: "18px" }}
+        width={{ xs: "90%", sm: "90%", md: "60%" }}
+        // textAlign={"center"}
+      >
         High Pressure Processing (HPP) revolutionizes food safety and quality by
         using extreme pressure to eliminate harmful pathogens while preserving
         the natural flavor, texture, and nutrients of food. This cutting-edge

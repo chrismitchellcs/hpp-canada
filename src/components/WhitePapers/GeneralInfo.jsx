@@ -3,7 +3,12 @@ import React from "react";
 
 const GeneralInfo = () => {
   return (
-    <Stack alignItems={"center"} pt={9} pb={4} spacing={2}>
+    <Stack
+      alignItems={"center"}
+      pt={{ xs: 4, sm: 4, md: 9 }}
+      pb={4}
+      spacing={2}
+    >
       <Box sx={{ fontSize: "30px", fontWeight: "500" }}>White Papers</Box>
       <Box sx={{ fontSize: "18px" }} width={"60%"} textAlign={"center"}>
         Explore these insightful papers by Hiperbaric, showcasing the diverse

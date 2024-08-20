@@ -1,4 +1,5 @@
 import { Box, Stack } from "@mui/material";
+import Line from "components/General/Line";
 import items from "data/items";
 import React from "react";
 
@@ -12,7 +13,7 @@ const IndiviualBenefits = () => {
         {items.map((item) => {
           return (
             <Stack
-              direction={"row"}
+              direction={{ xs: "column", sm: "column", md: "row" }}
               spacing={2}
               alignItems={"center"}
               justifyContent={"center"}
@@ -29,7 +30,9 @@ const IndiviualBenefits = () => {
                 </Box>
               </Stack>
 
-              <Box width={"80%"}>{item.description}</Box>
+              <Box width={{ xs: "100%", sm: "100%", md: "80%" }}>
+                {item.description}
+              </Box>
             </Stack>
           );
         })}

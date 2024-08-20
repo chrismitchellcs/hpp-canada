@@ -31,9 +31,17 @@ const Info = () => {
     //     </Typography>
     //   </Box>
     // </Stack>
-    <Stack alignItems={"center"} pt={9} pb={4} spacing={2}>
+    <Stack
+      alignItems={"center"}
+      pt={{ xs: 4, sm: 4, md: 9 }}
+      pb={4}
+      spacing={2}
+    >
       <Box sx={{ fontSize: "30px", fontWeight: "500" }}>Packaging</Box>
-      <Box sx={{ fontSize: "18px" }} width={"60%"}>
+      <Box
+        sx={{ fontSize: "18px" }}
+        width={{ xs: "90%", sm: "90%", md: "60%" }}
+      >
         <Typography sx={{ fontSize: "18px", fontWeight: "400" }}>
           In-Pack High Pressure Processing (HPP) is used on pre-packaged food,
           making packaging design crucial. Most HPP packaging is made from

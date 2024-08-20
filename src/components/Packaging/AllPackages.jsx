@@ -11,7 +11,7 @@ const AllPackages = () => {
         {packaging.map((item) => {
           return (
             <Stack
-              direction={"row"}
+              direction={{ xs: "column", sm: "column", md: "row" }}
               spacing={2}
               alignItems={"center"}
               justifyContent={"center"}
@@ -34,7 +34,9 @@ const AllPackages = () => {
                 </Box>
               </Stack>
 
-              <Box width={"80%"}>{item.description}</Box>
+              <Box width={{ xs: "100%", sm: "100%", md: "80%" }}>
+                {item.description}
+              </Box>
             </Stack>
           );
         })}
