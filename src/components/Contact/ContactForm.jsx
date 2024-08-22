@@ -89,7 +89,10 @@ const ContactForm = () => {
           sx={{ mt: 2, mb: 2 }}
           justifyContent={"space-between"}
         >
-          <ReCAPTCHA sitekey="ok" ref={captchaRef} />
+          <ReCAPTCHA
+            sitekey="6LfgHi0qAAAAAIdBChHFcIXlf6fnbFTyoEPaqkJu"
+            ref={captchaRef}
+          />
           <Button
             type="submit"
             sx={{
