@@ -90,7 +90,7 @@ const ContactForm = () => {
           justifyContent={"space-between"}
         >
           <ReCAPTCHA
-            sitekey={process.env.REACT_APP_SITE_KEY}
+            sitekey="6LfgHi0qAAAAAH_cOwJG1wTIvXvsnldn4TweXd9L"
             ref={captchaRef}
           />
           <Button
