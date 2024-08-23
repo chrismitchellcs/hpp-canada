@@ -8,7 +8,7 @@ const RecognizedBy = () => {
       alignItems={"center"}
       pt={5}
       pb={{ xs: 5, sm: 5, md: 0 }}
-      bgcolor={"white"}
+      bgcolor={"#F5F5F5"}
     >
       <Box
         sx={{ fontSize: "18px", fontWeight: "400" }}

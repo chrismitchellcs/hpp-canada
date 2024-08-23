@@ -24,7 +24,7 @@ const ContactForm = () => {
     captchaRef.current.reset();
     console.log(token, name, email, subject, message);
     await axios
-      .post(``, {
+      .post(`https://server-hpp.vercel.app/sendemail`, {
         token,
         name,
         email,
@@ -90,7 +90,7 @@ const ContactForm = () => {
           justifyContent={"space-between"}
         >
           <ReCAPTCHA
-            sitekey="6LfgHi0qAAAAAIdBChHFcIXlf6fnbFTyoEPaqkJu"
+            sitekey="6LfgHi0qAAAAAH_cOwJG1wTIvXvsnldn4TweXd9L"
             ref={captchaRef}
           />
           <Button

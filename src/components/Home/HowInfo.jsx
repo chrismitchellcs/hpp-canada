@@ -10,7 +10,7 @@ const HowInfo = () => {
       pb={5}
       alignItems={"center"}
       spacing={1}
-      sx={{ bgcolor: "white" }}
+      sx={{ bgcolor: "#F5F5F5" }}
     >
       {/* <Box sx={{ fontSize: "30px", fontWeight: "500", textAlign: "center" }}>
         How High Pressure Processing Works

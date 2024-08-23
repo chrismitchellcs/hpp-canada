@@ -46,15 +46,11 @@ const Info = () => {
           In-Pack High Pressure Processing (HPP) is used on pre-packaged food,
           making packaging design crucial. Most HPP packaging is made from
           plastic polymers like PET, PP, PE, PA, or EVOH, with eco-friendly
-          options like recycled PET or PLA also suitable.<br></br>
-          <br></br>Key properties include flexibility, elasticity, and water
-          resistance to endure and recover from high-pressure compression. HPP's
-          uniform pressure transmission allows for processing various food
-          shapes and sizes, but packaging geometry affects throughput. <br></br>
-          <br></br>Minimizing headspace reduces packaging failure risk, as gas
-          expands more violently than solids or liquids under pressure.{" "}
-          <br></br>
-          <br></br>More information can be found at{" "}
+          options like recycled PET or PLA. Key properties include flexibility,
+          elasticity, and water resistance to endure high-pressure compression.
+          While HPP handles various food shapes, packaging geometry affects
+          throughput, and minimizing headspace reduces the risk of failure.
+          Learn more at{" "}
           <Link
             sx={{ color: "#38ad56", textDecorationColor: "#38ad56" }}
             target="_blank"

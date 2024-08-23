@@ -2,6 +2,7 @@ import Footer from "components/General/Footer";
 import InfoBox from "components/General/InfoBox";
 import NavBar from "components/General/NavBar";
 import AllPackages from "components/Packaging/AllPackages";
+import ContactUs from "components/Packaging/ContactUs";
 // @ts-ignore
 import Info from "components/Packaging/Info";
 import Package from "components/Packaging/Package";
@@ -15,6 +16,7 @@ const Packaging = () => {
       <NavBar></NavBar>
       {/* <InfoBox title={"Packaging"}></InfoBox> */}
       <Info></Info>
+      <ContactUs></ContactUs>
       {/* <Packages></Packages> */}
       <AllPackages></AllPackages>
       <Footer></Footer>

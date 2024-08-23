@@ -143,7 +143,7 @@ const ImageInfo = () => {
         component={"img"}
         src={"hpp-machine.jpg"}
         sx={{ borderRadius: "10px" }}
-        width={{ xs: "80%", sm: "80%", md: "50%" }}
+        width={{ xs: "80%", sm: "80%", md: "45%" }}
       ></Box>
     </Stack>
   );

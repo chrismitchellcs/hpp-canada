@@ -7,7 +7,7 @@ import { ContactButton, HomeButton, TitleButton } from "../General/Buttons";
 
 // @ts-ignore
 const StyledButton = styled(Button)(({ color1, color2 }) => ({
-  backgroundColor: "white",
+  backgroundColor: "#F5F5F5",
   color: "black",
   borderRadius: "10px",
 
@@ -71,7 +71,7 @@ const Item = ({ item }) => {
       {showDescription && (
         <Box
           sx={{
-            bgcolor: "white",
+            bgcolor: "#F5F5F5",
             m: 2,
             pr: 3,
             pt: 1,

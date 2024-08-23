@@ -22,10 +22,8 @@ const Home = () => {
       <InfoBox></InfoBox>
       <ImageInfo></ImageInfo>
       <LogoSlider></LogoSlider>
-
-      <ItemButtonsHome></ItemButtonsHome>
-
       <HowInfo></HowInfo>
+      <ItemButtonsHome></ItemButtonsHome>
 
       <PackagingButtons items={packaging}></PackagingButtons>
 

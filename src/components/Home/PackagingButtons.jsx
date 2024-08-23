@@ -7,7 +7,7 @@ import { ContactButton, TitleButton } from "../General/Buttons";
 
 // @ts-ignore
 const StyledButton = styled(Button)(({ color1, color2 }) => ({
-  backgroundColor: "white",
+  backgroundColor: "#F5F5F5",
   color: "black",
   borderRadius: "10px",
 
@@ -71,7 +71,7 @@ const Item = ({ item }) => {
       {showDescription && (
         <Box
           sx={{
-            bgcolor: "white",
+            bgcolor: "#F5F5F5",
             m: 2,
             pr: 3,
             pt: 1,
@@ -90,7 +90,7 @@ const Item = ({ item }) => {
 
 const PackagingButtons = ({ items }) => {
   return (
-    <Stack pt={5} pb={5} alignItems={"center"} spacing={1} bgcolor="#F5F5F5">
+    <Stack pb={5} alignItems={"center"} spacing={1} bgcolor="white">
       {/* <Box sx={{ fontSize: "30px", fontWeight: "500", textAlign: "center" }}>
         Compatible Packaging
       </Box> */}
