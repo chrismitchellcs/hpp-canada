@@ -9,6 +9,8 @@ import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Slide from "@mui/material/Slide";
 import Image from "mui-image";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import { Button, Menu, MenuItem, Stack, styled } from "@mui/material";
 import {
   NavButton,
@@ -17,6 +19,7 @@ import {
   ImageButtonSmall,
 } from "components/General/Buttons";
 import MenuIcon from "@mui/icons-material/Menu";
+import { useState } from "react";
 
 function HideOnScroll(props) {
   const { children, window } = props;
@@ -95,28 +98,65 @@ function BasicMenu() {
 }
 
 export default function NavBar(props) {
+  const [anchorEl, setAnchorEl] = useState(null);
+  const open = Boolean(anchorEl);
+  const handleClick = (event) => {
+    event.preventDefault();
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = (e) => {
+    e.preventDefault();
+    setAnchorEl(null);
+    const page = e.target.id;
+    window.location.href = page;
+  };
+
   return (
     <React.Fragment>
-      <CssBaseline />
       <HideOnScroll {...props}>
-        <AppBar sx={{}}>
+        <AppBar sx={{ bgcolor: "rgba(255, 255, 255, 0.8)" }}>
           <Toolbar
             sx={{
-              bgcolor: "white",
               m: 0,
               p: 0,
             }}
           >
-            <Stack flexGrow={1} m={1}>
+            <Stack m={1}>
               <Box
+                mr={3}
+                ml={3}
                 display={{ xs: "none", sm: "none", md: "block", lg: "block" }}
               >
                 <ImageButton href="/">
-                  <Box
-                    component={"img"}
-                    src={"hpplogo.png"}
-                    width={{ xs: "100px", sm: "100px", md: "200px" }}
-                  ></Box>
+                  <Stack
+                    direction={"row"}
+                    alignItems={"center"}
+                    lineHeight={1}
+                    color={"black"}
+                  >
+                    <Box
+                      component={"img"}
+                      src={"hpp-logo.png"}
+                      width={{ xs: "100px", sm: "100px", md: "80px" }}
+                    ></Box>
+                    <Stack spacing={0} textAlign={"center"}>
+                      <Box
+                        fontSize={"26px"}
+                        fontWeight={"800"}
+                        // color={"#438fc9"}
+                      >
+                        HPP
+                      </Box>
+                      <Box
+                        fontSize={"22px"}
+                        fontWeight={"350"}
+                        // color={"#438fc9"}
+                      >
+                        Canada
+                      </Box>
+                    </Stack>
+                  </Stack>
                 </ImageButton>
               </Box>
               <Box
@@ -126,16 +166,42 @@ export default function NavBar(props) {
                   <Box
                     component={"img"}
                     src={"hpplogo.png"}
-                    width={{ xs: "100px", sm: "100px", md: "200px" }}
+                    width={{ xs: "100px", sm: "100px", md: "150px" }}
                   ></Box>
                 </ImageButtonSmall>
               </Box>
             </Stack>
-            <Box display={{ xs: "none", sm: "none", md: "none", lg: "block" }}>
-              <NavButton href="what">What is HPP</NavButton>
-              <NavButton href="benefits">Benefits of HPP</NavButton>
+            <Box
+              flexGrow={1}
+              display={{ xs: "none", sm: "none", md: "none", lg: "block" }}
+            >
+              <NavButton onClick={handleClick}>
+                About HPP <KeyboardArrowDownIcon></KeyboardArrowDownIcon>
+              </NavButton>
+              <Menu
+                id="basic-menu"
+                anchorEl={anchorEl}
+                open={open}
+                onClose={handleClose}
+                MenuListProps={{
+                  "aria-labelledby": "basic-button",
+                }}
+              >
+                <MenuItem onClick={handleClose} id="what">
+                  What is HPP
+                </MenuItem>
+                <MenuItem onClick={handleClose} id="benefits">
+                  Benefits of HPP
+                </MenuItem>
+                <MenuItem onClick={handleClose} id="whitepapers">
+                  White Papers
+                </MenuItem>
+              </Menu>
+
               <NavButton href="packaging">Packaging</NavButton>
-              <NavButton href="whitepapers">White Papers</NavButton>
+
+              <NavButton href="products">Our Products</NavButton>
+              <NavButton href="services">Other Services</NavButton>
             </Box>
             <Box
               display={{ xs: "block", sm: "block", md: "block", lg: "none" }}
@@ -143,11 +209,10 @@ export default function NavBar(props) {
               <BasicMenu></BasicMenu>
             </Box>
 
-            <ContactButton href="contact">CONTACT US</ContactButton>
+            <ContactButton href="contact">Contact Us</ContactButton>
           </Toolbar>
         </AppBar>
       </HideOnScroll>
-      <Toolbar />
     </React.Fragment>
   );
 }

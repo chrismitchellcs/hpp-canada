@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 // import items from "data/items";
-import { ContactButton, TitleButton } from "../General/Buttons";
+import { AboutButton, ContactButton, TitleButton } from "../General/Buttons";
 
 // @ts-ignore
 const StyledButton = styled(Button)(({ color1, color2 }) => ({
@@ -17,35 +17,47 @@ const StyledButton = styled(Button)(({ color1, color2 }) => ({
   },
 }));
 
-const ItemButton = ({ name, arrow }) => {
+const ItemButton = ({ item, arrow }) => {
   return (
-    <Stack width={"100%"}>
-      <Box
-        sx={{
-          p: 1,
-          maxWidth: "250px",
-          minWidth: "250px",
-          borderRadius: "10px",
-        }}
-      >
-        <Stack
-          width={"100%"}
-          direction={"row"}
-          spacing={1}
-          sx={{ alignItems: "center", justifyContent: "center" }}
-        >
-          <Box sx={{ fontSize: "14px", fontWeight: "500" }}>{name}</Box>
-          {arrow ? (
-            <KeyboardArrowUpIcon
-              sx={{ fontSize: "24px" }}
-            ></KeyboardArrowUpIcon>
-          ) : (
-            <KeyboardArrowDownIcon
-              sx={{ fontSize: "24px" }}
-            ></KeyboardArrowDownIcon>
-          )}
-        </Stack>
+    <Stack
+      width={"250px"}
+      justifyContent={"center"}
+      alignItems={"CENTER"}
+      spacing={2}
+      mt={2}
+      mb={2}
+    >
+      <Box component={"img"} src={item.image} width={"25%"}></Box>
+      <Box textTransform={"none"} fontSize={"16px"}>
+        {item.name}
       </Box>
+
+      {/* <Box
+            sx={{
+              p: 1,
+              maxWidth: "250px",
+              minWidth: "250px",
+              borderRadius: "10px",
+            }}
+          >
+            <Stack
+              width={"100%"}
+              direction={"row"}
+              spacing={1}
+              sx={{ alignItems: "center", justifyContent: "center" }}
+            >
+              <Box sx={{ fontSize: "14px", fontWeight: "500" }}>{name}</Box>
+              {arrow ? (
+                <KeyboardArrowUpIcon
+                  sx={{ fontSize: "24px" }}
+                ></KeyboardArrowUpIcon>
+              ) : (
+                <KeyboardArrowDownIcon
+                  sx={{ fontSize: "24px" }}
+                ></KeyboardArrowDownIcon>
+              )}
+            </Stack>
+          </Box> */}
     </Stack>
   );
 };
@@ -66,7 +78,7 @@ const Item = ({ item }) => {
         color1={"#F5F5F5"}
         color2={"#cfcccc"}
       >
-        <ItemButton name={item.name} arrow={showDescription}></ItemButton>
+        <ItemButton item={item} arrow={showDescription}></ItemButton>
       </StyledButton>
       {showDescription && (
         <Box
@@ -90,20 +102,36 @@ const Item = ({ item }) => {
 
 const PackagingButtons = ({ items }) => {
   return (
-    <Stack pb={5} alignItems={"center"} spacing={1} bgcolor="white">
+    <Stack
+      pb={5}
+      alignItems={"center"}
+      spacing={1}
+      bgcolor="white"
+      width={"100%"}
+      justifyContent={"center"}
+    >
       {/* <Box sx={{ fontSize: "30px", fontWeight: "500", textAlign: "center" }}>
         Compatible Packaging
       </Box> */}
-      <TitleButton href="packaging">Compatible Packaging</TitleButton>
-      <Box
-        sx={{ fontSize: "16px", fontWeight: "400", textAlign: "center" }}
-        width={"80%"}
+      {/* <TitleButton href="packaging">Compatible Packaging</TitleButton> */}
+      <Stack
+        direction={"row"}
+        justifyContent={"center"}
+        alignItems={"center"}
+        spacing={4}
       >
-        HPP works best with packaging that contains minimal air or headspace and
-        can flex up to 15% to withstand high pressure, accommodating various
-        packaging types.
-      </Box>
-      <Grid container spacing={0} textAlign={"center"} rowSpacing={4}>
+        <Box sx={{ fontSize: "30px", fontWeight: "600" }}>
+          Compatible Packaging
+        </Box>
+        <AboutButton>Learn More</AboutButton>
+      </Stack>
+      <Grid
+        width={{ xs: "100%", sm: "100%", md: "100%", lg: "100%" }}
+        container
+        justifyContent={"center"}
+        textAlign={"center"}
+        rowSpacing={4}
+      >
         {items.map((item) => (
           <Grid item xs={12} sm={6} md={6} lg={4} xl={4}>
             <Item item={item}></Item>

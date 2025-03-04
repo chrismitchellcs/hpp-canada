@@ -14,19 +14,28 @@ import packaging from "data/packaging";
 import React from "react";
 import ItemButtonsHome from "components/Home/ItemButtonsHome";
 import Line from "components/General/Line";
+import AboutUs from "components/Home/AboutUs";
+import Products from "components/Home/Products";
+import OtherServices from "components/Home/OtherServices";
+import Relocation from "components/Home/Relocation";
 
 const Home = () => {
   return (
     <div>
       <NavBar></NavBar>
       <InfoBox></InfoBox>
+
+      <AboutUs></AboutUs>
+      <Relocation></Relocation>
+      {/* <LogoSlider></LogoSlider> */}
+      {/* <RecognizedBy></RecognizedBy> */}
       <ImageInfo></ImageInfo>
-      <LogoSlider></LogoSlider>
-      <HowInfo></HowInfo>
+      {/* <HowInfo></HowInfo> */}
       <ItemButtonsHome></ItemButtonsHome>
 
-      <PackagingButtons items={packaging}></PackagingButtons>
-
+      {/* <PackagingButtons items={packaging}></PackagingButtons> */}
+      <Products></Products>
+      <OtherServices></OtherServices>
       <RecognizedBy></RecognizedBy>
       <Quote></Quote>
 

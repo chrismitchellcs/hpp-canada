@@ -6,9 +6,12 @@ const NavButton = styled(Button)({
   backgroundColor: "transparent",
   color: "black",
   maxHeight: "40px",
-  margin: "10px",
+  margin: "5px",
   fontSize: "16px",
-  fontWeight: "400",
+  fontWeight: "450",
+  textTransform: "none",
+  fontFamily: "Inter, serif",
+  letterSpacing: 0,
 
   "&:hover": {
     textDecoration: "underline",
@@ -21,8 +24,10 @@ const NavButton = styled(Button)({
 
 const ImageButton = styled(Button)({
   backgroundColor: "transparent",
-  maxWidth: "200px",
-
+  textTransform: "none",
+  color: "black",
+  margin: 0,
+  padding: 0,
   "&:hover": {
     backgroundColor: "transparent",
     color: "black",
@@ -84,9 +89,54 @@ const ContactButton = styled(Button)({
   marginLeft: "10px",
   marginRight: "10px",
   padding: "10px",
-  fontSize: "14px",
-  fontWeight: "400",
-  borderRadius: "15px",
+  paddingLeft: "15px",
+  paddingRight: "15px",
+  fontSize: "16px",
+  fontWeight: "450",
+  borderRadius: "100px",
+  fontFamily: "Inter, serif",
+  letterSpacing: 0,
+
+  "&:hover": {
+    //   textDecoration: "underline",
+    //   textDecorationThickness: "2px",
+    //   textUnderlineOffset: "5px",
+    backgroundColor: "#26753a",
+    //   color: "black",
+  },
+});
+
+const AboutButton = styled(Button)({
+  textTransform: "none",
+  backgroundColor: "#38ad56",
+  color: "white",
+  padding: "10px",
+  paddingLeft: "20px",
+  paddingRight: "20px",
+  fontSize: "16px",
+  fontWeight: "450",
+  borderRadius: "100px",
+  fontFamily: "Inter, serif",
+  letterSpacing: 0,
+  marginTop: "10px",
+  "&:hover": {
+    backgroundColor: "#26753a",
+  },
+});
+
+const HomeImageButton = styled(Button)({
+  textTransform: "none",
+  backgroundColor: "#38ad56",
+  color: "white",
+
+  padding: "1vw",
+  paddingLeft: "1vw",
+  paddingRight: "1vw",
+
+  fontWeight: "450",
+  borderRadius: "100px",
+  fontFamily: "Inter, serif",
+  letterSpacing: 0,
 
   "&:hover": {
     //   textDecoration: "underline",
@@ -171,4 +221,6 @@ export {
   ImageButton,
   ImageButtonSmall,
   PaperButton,
+  AboutButton,
+  HomeImageButton,
 };

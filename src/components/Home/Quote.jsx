@@ -13,16 +13,10 @@ const Quote = () => {
       pb={5}
       bgcolor={"black"}
       color={"white"}
-      spacing={0}
+      spacing={2}
     >
       <Box component={"img"} src={"hpplogonotext.png"} width={"100px"}></Box>
-      <Box
-        sx={{
-          fontSize: "36px",
-          fontWeight: "500",
-          width: "80%",
-        }}
-      >
+      <Box sx={{ fontSize: "30px", fontWeight: "600" }}>
         Partner with HPP Canada Today
       </Box>
       <Box
@@ -35,7 +29,9 @@ const Quote = () => {
         Discover how our High Pressure Processing solutions can elevate your
         business. Contact us now to learn more!
       </Box>
-      <QuoteButton href="contact">Get a Quote</QuoteButton>
+      <Box m={1}>
+        <QuoteButton href="contact">Get a Quote</QuoteButton>
+      </Box>
     </Stack>
   );
 };

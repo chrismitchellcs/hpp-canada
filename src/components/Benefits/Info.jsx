@@ -17,7 +17,7 @@ const Info = () => {
     // </Stack>
     <Stack
       alignItems={"center"}
-      pt={{ xs: 4, sm: 4, md: 9 }}
+      pt={{ xs: 4, sm: 4, md: 15 }}
       pb={4}
       spacing={2}
     >
