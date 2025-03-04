@@ -17,6 +17,7 @@ const LogoSlider = () => {
     pauseOnHover: false,
     swipe: false,
     touchMove: false,
+    arrows: false,
   };
   const settingsSmall = {
     infinite: true,
@@ -33,25 +34,26 @@ const LogoSlider = () => {
   };
   return (
     <Stack
-      width={"100%"}
+      bgcolor={"white"}
+      borderRadius={"50px"}
       alignItems={"center"}
       justifyContent={"center"}
       textAlign={"center"}
       spacing={5}
-      mt={5}
-      mb={5}
+      mt={3}
+      mb={3}
     >
       <Box
         sx={{
-          fontSize: "18px",
+          fontSize: "20px",
           fontWeight: "400",
           width: "80%",
           textAlign: "center",
         }}
       >
-        TRUSTED BY PREMIUM FOOD MANUFACTURERS
+        Trusted by Many Premium Food Manufacturers
       </Box>
-      <Box width={"80%"} display={{ xs: "none", sm: "none", md: "block" }}>
+      <Box width={"100%"} display={{ xs: "none", sm: "none", md: "block" }}>
         <Slider {...settings}>
           <div className="container">
             <img src="logos/bec.jpg" width={"100px"} />

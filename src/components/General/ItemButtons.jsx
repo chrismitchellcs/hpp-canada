@@ -7,20 +7,32 @@ import { ContactButton, HomeButton, TitleButton } from "../General/Buttons";
 
 // @ts-ignore
 const StyledButton = styled(Button)(({ color1, color2 }) => ({
-  backgroundColor: "#F5F5F5",
+  backgroundColor: color1,
   color: "black",
   borderRadius: "10px",
 
   "&:hover": {
-    backgroundColor: "lightgrey",
+    backgroundColor: color2,
     color: "#black",
   },
 }));
 
-const ItemButton = ({ name, arrow }) => {
+const ItemButton = ({ item, arrow }) => {
   return (
-    <Stack width={"100%"}>
-      <Box
+    <Stack
+      width={"250px"}
+      justifyContent={"center"}
+      alignItems={"CENTER"}
+      spacing={2}
+      mt={2}
+      mb={2}
+    >
+      <Box component={"img"} src={item.icon} width={"25%"}></Box>
+      <Box textTransform={"none"} fontSize={"16px"}>
+        {item.name}
+      </Box>
+
+      {/* <Box
         sx={{
           p: 1,
           maxWidth: "250px",
@@ -45,7 +57,7 @@ const ItemButton = ({ name, arrow }) => {
             ></KeyboardArrowDownIcon>
           )}
         </Stack>
-      </Box>
+      </Box> */}
     </Stack>
   );
 };
@@ -63,19 +75,19 @@ const Item = ({ item }) => {
         id={item.name}
         onClick={handleClick}
         // @ts-ignore
-        color1={"#E7F2DA"}
-        color2={"#CEE4B5"}
+        color1={item.color1}
+        color2={item.color2}
       >
-        <ItemButton name={item.name} arrow={showDescription}></ItemButton>
+        <ItemButton item={item} arrow={showDescription}></ItemButton>
       </StyledButton>
       {showDescription && (
         <Box
           sx={{
-            bgcolor: "#F5F5F5",
+            bgcolor: item.color1,
             m: 2,
             pr: 3,
-            pt: 1,
-            pb: 1,
+            pt: 3,
+            pb: 2,
             pl: 0,
             borderRadius: "10px",
             textAlign: "left",

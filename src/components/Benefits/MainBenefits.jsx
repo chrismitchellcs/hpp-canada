@@ -17,7 +17,7 @@ const MainBenefits = () => {
         textAlign={"center"}
         spacing={2}
       >
-        <Box component={"img"} src="foodsafety.jpg" height={"75px"}></Box>
+        <Box component={"img"} src="foodsafety.png" height={"75px"}></Box>
         <Box sx={{ fontSize: "22px", fontWeight: "450" }}>
           Food Safety Guarantee
         </Box>

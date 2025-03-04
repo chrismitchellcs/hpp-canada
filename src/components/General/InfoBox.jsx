@@ -6,7 +6,7 @@ const InfoBox = ({ title }) => {
   return (
     <Stack
       alignItems={"center"}
-      pt={{ xs: 6, sm: 6, md: 9 }}
+      pt={{ xs: 6, sm: 6, md: 15 }}
       pb={4}
       spacing={2}
     >
