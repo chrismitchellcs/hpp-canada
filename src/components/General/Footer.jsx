@@ -11,35 +11,67 @@ const Footer = () => {
     <Stack
       direction={"row"}
       alignItems={"center"}
-      justifyContent={"space-around"}
+      justifyContent={{ xs: "space-between", sm: "space-around" }}
       p={3}
     >
-      <Box
-        display={{ xs: "none", sm: "block" }}
-        component={"img"}
-        src={"hpplogo.png"}
-        width={"20%"}
-      ></Box>
-      {/* <Grid container width={"30%"}>
-        <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
+      <Stack
+        direction={"row"}
+        alignItems={"center"}
+        lineHeight={1}
+        color={"black"}
+      >
+        <Box
+          component={"img"}
+          src={"hpp-logo.png"}
+          width={{ xs: "60px", sm: "80px", md: "80px" }}
+        ></Box>
+        <Stack spacing={0} textAlign={"center"}>
+          <Box
+            fontSize={{ xs: "22px", sm: "26px", md: "26px" }}
+            fontWeight={"800"}
+            // color={"#438fc9"}
+          >
+            HPP
+          </Box>
+          <Box
+            fontSize={{ xs: "16px", sm: "22px", md: "22px" }}
+            fontWeight={"350"}
+            // color={"#438fc9"}
+          >
+            Canada
+          </Box>
+        </Stack>
+      </Stack>
+      <Grid container width={"50%"} display={{ xs: "none", md: "flex" }}>
+        <Grid item md={4} textAlign={"center"}>
           <NavButton>What is HPP</NavButton>
         </Grid>
-        <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
+        <Grid item md={4} textAlign={"center"}>
           <NavButton>Benefits of HPP</NavButton>
         </Grid>
-        <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
-          <NavButton>Packaging</NavButton>
+        <Grid item md={4} textAlign={"center"}>
+          <NavButton>White Papers</NavButton>
         </Grid>
-        <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
-          <NavButton>Validation Studies</NavButton>
+        <Grid item md={4} textAlign={"center"}>
+          <NavButton> Packaging</NavButton>
         </Grid>
-      </Grid> */}
-      <Stack>
+        <Grid item md={4} textAlign={"center"}>
+          <NavButton> Our Products</NavButton>
+        </Grid>
+        <Grid item md={4} textAlign={"center"}>
+          <NavButton> Other Services</NavButton>
+        </Grid>
+      </Grid>
+      {/* <Stack
+        direction={"column"}
+        alignItems={"flex-start"}
+        display={{ xs: "none", sm: "block" }}
+      >
         <FooterButton href="what">What is HPP</FooterButton>
         <FooterButton href="benefits">Benefits of HPP</FooterButton>
         <FooterButton href="packaging">Packaging</FooterButton>
         <FooterButton href="whitepapers">White Papers</FooterButton>
-      </Stack>
+      </Stack> */}
       <Stack
         spacing={2}
         sx={{ fontSize: "14px", fontWeight: "400", color: "black" }}

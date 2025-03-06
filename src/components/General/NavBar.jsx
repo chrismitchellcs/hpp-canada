@@ -86,11 +86,17 @@ function BasicMenu() {
         <MenuItem onClick={handleClose} id="benefits">
           Benefits of HPP
         </MenuItem>
+        <MenuItem onClick={handleClose} id="whitepapers">
+          White Papers
+        </MenuItem>
         <MenuItem onClick={handleClose} id="packaging">
           Packaging
         </MenuItem>
-        <MenuItem onClick={handleClose} id="whitepapers">
-          White Papers
+        <MenuItem onClick={handleClose} id="products">
+          Our Products
+        </MenuItem>
+        <MenuItem onClick={handleClose} id="services">
+          Other Services
         </MenuItem>
       </Menu>
     </div>
@@ -118,8 +124,9 @@ export default function NavBar(props) {
         <AppBar sx={{ bgcolor: "rgba(255, 255, 255, 0.8)" }}>
           <Toolbar
             sx={{
-              m: 0,
-              p: 0,
+              maxHeight: "20px",
+              mr: 1,
+              p: { xs: 0.1, sm: 0.1, md: 1 },
             }}
           >
             <Stack m={1}>
@@ -162,18 +169,41 @@ export default function NavBar(props) {
               <Box
                 display={{ xs: "block", sm: "block", md: "none", lg: "none" }}
               >
-                <ImageButtonSmall href="/">
-                  <Box
-                    component={"img"}
-                    src={"hpplogo.png"}
-                    width={{ xs: "100px", sm: "100px", md: "150px" }}
-                  ></Box>
-                </ImageButtonSmall>
+                <ImageButton href="/">
+                  <Stack
+                    direction={"row"}
+                    alignItems={"center"}
+                    lineHeight={1}
+                    color={"black"}
+                  >
+                    <Box
+                      component={"img"}
+                      src={"hpp-logo.png"}
+                      width={{ xs: "60px", sm: "60px", md: "80px" }}
+                    ></Box>
+                    <Stack spacing={0} textAlign={"center"}>
+                      <Box
+                        fontSize={{ xs: "18px", sm: "20px", md: "26px" }}
+                        fontWeight={"800"}
+                        // color={"#438fc9"}
+                      >
+                        HPP
+                      </Box>
+                      <Box
+                        fontSize={{ xs: "14px", sm: "16px", md: "22px" }}
+                        fontWeight={"350"}
+                        // color={"#438fc9"}
+                      >
+                        Canada
+                      </Box>
+                    </Stack>
+                  </Stack>
+                </ImageButton>
               </Box>
             </Stack>
             <Box
               flexGrow={1}
-              display={{ xs: "none", sm: "none", md: "none", lg: "block" }}
+              display={{ xs: "none", sm: "none", md: "block", lg: "block" }}
             >
               <NavButton onClick={handleClick}>
                 About HPP <KeyboardArrowDownIcon></KeyboardArrowDownIcon>
@@ -204,12 +234,20 @@ export default function NavBar(props) {
               <NavButton href="services">Other Services</NavButton>
             </Box>
             <Box
-              display={{ xs: "block", sm: "block", md: "block", lg: "none" }}
+              flexGrow={1}
+              display={{ xs: "block", sm: "block", md: "none", lg: "none" }}
             >
               <BasicMenu></BasicMenu>
             </Box>
 
-            <ContactButton href="contact">Contact Us</ContactButton>
+            <ContactButton href="contact">
+              <Box
+                fontSize={{ xs: "12px", md: "16px" }}
+                p={{ xs: 0.5, sm: 0.5, md: 1 }}
+              >
+                Contact Us
+              </Box>
+            </ContactButton>
           </Toolbar>
         </AppBar>
       </HideOnScroll>

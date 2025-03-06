@@ -7,7 +7,7 @@ const ImageInfo = () => {
   return (
     <Stack
       pt={5}
-      pb={3}
+      pb={5}
       sx={{ bgcolor: "#F5F5F5" }}
       alignItems={"center"}
       justifyContent={"center"}

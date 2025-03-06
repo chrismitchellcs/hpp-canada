@@ -31,6 +31,7 @@ const Home = () => {
       {/* <RecognizedBy></RecognizedBy> */}
       <ImageInfo></ImageInfo>
       {/* <HowInfo></HowInfo> */}
+      <LogoSlider></LogoSlider>
       <ItemButtonsHome></ItemButtonsHome>
 
       {/* <PackagingButtons items={packaging}></PackagingButtons> */}
