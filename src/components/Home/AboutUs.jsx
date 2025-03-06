@@ -151,7 +151,7 @@ const AboutUs = () => {
                 compromising quality!
               </Box>
               <Box>
-                <AboutButton>Learn More</AboutButton>
+                <AboutButton href="/what">Learn More</AboutButton>
               </Box>
             </Stack>
           </Fade>
@@ -170,7 +170,7 @@ const AboutUs = () => {
                 coffee, and protein drinks — all safe, fresh, and long-lasting.
               </Box>
               <Box>
-                <AboutButton>See The Products</AboutButton>
+                <AboutButton href="/products">See The Products</AboutButton>
               </Box>
             </Stack>
           </Fade>
@@ -191,7 +191,7 @@ const AboutUs = () => {
                 way.
               </Box>
               <Box>
-                <AboutButton>See Our Services</AboutButton>
+                <AboutButton href="/services">See Our Services</AboutButton>
               </Box>
             </Stack>
           </Fade>

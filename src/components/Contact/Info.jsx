@@ -8,7 +8,7 @@ const Info = () => {
   return (
     <Stack
       direction={{ xs: "column", sm: "column", md: "row" }}
-      pt={{ xs: 5, sm: 5, md: 10 }}
+      pt={{ xs: 10, sm: 10, md: 14 }}
       pb={5}
       alignItems={"center"}
       justifyContent={"center"}

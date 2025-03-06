@@ -15,8 +15,7 @@ const OtherServices = () => {
           <Box width={"80%"} justifySelf={"center"}>
             HPP Canada offers more than just high-pressure processing. From
             bottling and juicing to co-packing, we provide end-to-end solutions
-            to help bring your products to market. Get in touch today to explore
-            how we can support your business!
+            to help bring your products to market.
           </Box>
         </Box>
         <Stack

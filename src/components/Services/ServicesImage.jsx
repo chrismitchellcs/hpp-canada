@@ -44,7 +44,7 @@ const ServicesImage = () => {
         sx={{
           width: "80%",
 
-          mt: { xs: "20vw", sm: "14vw", md: "14vw" },
+          mt: { xs: "21vw", sm: "14vw", md: "14vw" },
           ml: { xs: "10vw", sm: "10vw", md: "10vw" },
 
           fontSize: "4vw",
