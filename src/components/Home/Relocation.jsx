@@ -30,32 +30,27 @@ const Relocation = () => {
       spacing={4}
     >
       <Box sx={{ fontSize: "30px", fontWeight: "600" }}>
-        HPP Canada is Moving!
+        HPP Canada has Moved!
       </Box>
       <Box
+        justifySelf={"center"}
+        textAlign={"center"}
         width={"75%"}
         sx={{ fontSize: "18px", fontWeight: "350", lineHeight: 1.4 }}
       >
-        We are excited to share that we are relocating to a larger facility to
-        better serve you! Starting in April 2025, our new address will be:
+        We are excited to share that we have relocated to a larger facility to
+        better serve you! Our new address is:
       </Box>
-      <Stack width={"75%"} spacing={1} alignItems={"center"}>
+      <Stack
+        width={"75%"}
+        spacing={1}
+        alignItems={"center"}
+        textAlign={"center"}
+      >
         <Box sx={{ fontSize: "30px", fontWeight: "600", color: "#38ad56" }}>
           8188 River Way, Delta, BC
         </Box>
-        <Box sx={{ fontSize: "18px", fontWeight: "350", lineHeight: 1.4 }}>
-          (Approximately 10 minutes from our current location)
-        </Box>
       </Stack>
-      <Box
-        width={"75%"}
-        sx={{ fontSize: "18px", fontWeight: "350", lineHeight: 1.4 }}
-      >
-        During this transition, our HPP equipment will be unavailable from March
-        29 to April 12, 2025. We will do our utmost to accommodate your needs
-        during this period and are exploring options to access another HPP
-        machine for emergency processing.
-      </Box>
     </Stack>
   );
 };

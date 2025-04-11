@@ -81,8 +81,8 @@ const Footer = () => {
             sx={{ fontSize: "30px", color: "#38ad56" }}
           ></LocationOnOutlinedIcon>
           <Box>
-            1668 Fosters Way
-            <br /> Delta, BC V3M 6S6
+            8188 River Way
+            <br /> Delta, BC V4G 1K5
           </Box>
         </Stack>
         <Stack direction={"row"} alignItems={"center"} spacing={1}>

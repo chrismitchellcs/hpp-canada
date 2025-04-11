@@ -51,11 +51,11 @@ const Info = () => {
             <Box>
               HPP Canada
               <br />
-              1668 Fosters Way
+              8188 River Way
               <br />
               Delta, BC
               <br />
-              V3M 6S6
+              V4G 1K5
             </Box>
           </Stack>
           <Stack direction={"row"} alignItems={"center"} spacing={5}>
